@@ -42,17 +42,15 @@ public class CajeroAutomatico {
     }
     void ingresarDinero() {
         System.out.println("¿Cuanto dinero desea ingresar?");
-        try (Scanner scanner = new Scanner(System.in)) {
+        Scanner scanner = new Scanner(System.in);
             double cantidad = scanner.nextDouble();
             cuentaBancariaActual.ingresarDinero(cantidad);
-        }
     }
     void sacarDinero() {
         System.out.println("¿Cuanto dinero desea retirar?");
-       try ( Scanner scanner = new Scanner(System.in)) {
+       Scanner scanner = new Scanner(System.in);
         double cantidad = scanner.nextDouble();
         cuentaBancariaActual.sacarDinero(cantidad);
-    }
 }
     void consultarUltimosMovimientos() {};
 
