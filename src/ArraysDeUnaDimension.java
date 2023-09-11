@@ -15,13 +15,20 @@ public class ArraysDeUnaDimension {
         diasDeLaSemana[6] = "Domingo";
         System.out.println("segundo dia de la semana es " + diasDeLaSemana[1]);
 
+        // podemos inicializar un array agregando los [] luego del nombre de la variable
+        // seguido = y de los elementos que contendra entre {}
         int numeros[] = {8, 9, 85, -6};
         int minimo, maximo;
-        minimo = maximo = numeros[0];
+        minimo = maximo = numeros[0]; // inicializamos los valores de las variables
         for ( int i = 0; i <= numeros.length - 1; i++) {
+            // es importante el length - 1 por que sino tratara de acceder a un indice que no existe
             if (numeros[i] > maximo) maximo = numeros[i];
             if (numeros[i] < minimo) minimo = numeros[i];
         } 
         System.out.println("El valor maximo es " + maximo + " y el valor minimo es " + minimo);  
+
+        // tambien podemos colocar las [] luego de especificar el tipo
+        double[] miArrayDouble = {2.3, 8.9};
+        System.out.println("Mi array de doubles " + miArrayDouble[1]);
     }
 }
